@@ -1,0 +1,8 @@
+section {
+  margin: 10px auto;
+}
+
+#message {
+  color: red;
+  font-weight: bold;
+}

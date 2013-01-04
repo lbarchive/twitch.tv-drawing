@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Twitch.tv Viewers/Chatters Drawing</title>
+  <link rel="stylesheet" href="main.css" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1>Twitch.tv Viewers/Chatters Drawing</h1>
+  </header>
+
+  <section>
+    <div><span id="message"></span></div>
+  </section>
+
+  <section id="controls">
+    <div>
+      Channel <input id="channel" type="text"/>
+      Number of winners <input id="max-winners" type="text" value="1" size="3"/>
+    </div>
+    <div>
+      <button id="btn-draw" onclick="draw()">Draw</button>
+      <span id="roles"></span>
+    </div>
+  </section>
+
+  <section id="results"></section>
+  
+  <footer>
+    <div>
+      Created by <a href="http://yjl.im">Yu-Jie Lin</a>
+      &bullet;
+      <a href="https://github.com/livibetter/twitch.tv-drawing">GitHub</a>
+      &bullet;
+      <a href='http://as.yjl.im'>Share</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
