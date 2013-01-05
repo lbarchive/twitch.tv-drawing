@@ -1,3 +1,17 @@
+body {
+  font-family: sans;
+}
+
+a {
+  color: #6441a5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 section {
   margin: 10px auto;
 }
@@ -5,4 +19,43 @@ section {
 #message {
   color: red;
   font-weight: bold;
+}
+
+#controls {
+  font-size: 20px;
+}
+
+#controls > div {
+  margin: 10px 0;
+}
+
+#controls > div > * {
+  vertical-align: middle;
+}
+
+label, input, button {
+  padding: 0.5ex;
+  border: 1px solid #666;
+  font-size: 20px;
+
+  border-radius: 0.5ex;
+}
+
+button {
+  background-color: #eee;
+  color: #6441a5;
+  font-weight: bold;
+}
+
+button[disabled] {
+  opacity: 0.25;
+}
+
+label {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+input[type=checkbox][id|=role] {
+  display: none;
 }
